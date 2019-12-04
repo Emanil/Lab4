@@ -6,21 +6,22 @@
 using namespace std;
 
 
-class Motorvehicle
-{
+class Motorvehicle {
+
 	Engine engine;
 	Body body;
 	Owner owner;
-	float* tireDiameters = new float[numberOfTires];
+	float tireDiameters;
 	int numberOfTires;
 	string model;
 	
-public:
+	public:
 	
-	Motorvehicle(Engine engineForward, Body bodyForward, Owner ownerForward, float tireDiametersForward, int numberOfTiresForward, string modelForward);
-	~Motorvehicle();
+		Motorvehicle(Engine engineForward, Body bodyForward, Owner ownerForward, float tireDiametersForward, int numberOfTiresForward, string modelForward);
+		Motorvehicle();
+		~Motorvehicle();
 
-	// Method
-	void print();
+		// Method
+		void print();
 };
 
