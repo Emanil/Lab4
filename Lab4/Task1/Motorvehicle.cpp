@@ -3,10 +3,11 @@
 using namespace std;
 
 
-Motorvehicle::Motorvehicle(Engine engineForward, Body bodyForward, Owner ownerForward, float tireDiametersForward, int numberOfTiresForward, string modelForward) : engine(engineForward), body(bodyForward), owner(ownerForward) {
-	
-	this->tireDiameters = *new float[numberOfTires];
-	this->numberOfTires = numberOfTiresForward;
+Motorvehicle::Motorvehicle(float tireDiametersForward, int numberOfTiresForward, string modelForward) {
+	//this->engine = engineForward;
+	//this->owner = ownerForward;
+	numberOfTires = numberOfTiresForward;
+	this->tireDiameters = *new float[numberOfTiresForward];
 	this->model = modelForward;
 }
 
@@ -15,13 +16,13 @@ Motorvehicle::Motorvehicle() {
 }
 
 Motorvehicle::~Motorvehicle() {
-	delete this->tireDiameters;
+	delete[] &tireDiameters;
 }
 
 void Motorvehicle::print() {
 	cout << "Model: " << model << endl;
-	cout << "Diamater: " << tireDiameters << endl;
 	cout << "Number of tires: " << numberOfTires << endl;
+	cout << "Diamater: " << this->tireDiameters[0] << endl; //Prints numberOfTires times in a for
 	
 }
 

@@ -1,13 +1,5 @@
 ﻿  Body.cpp
-  Engine.cpp
-c:\users\emanil-9\source\repos\lab4\lab4\task1\engine.cpp(18): error C2065: 'cout': undeclared identifier
-c:\users\emanil-9\source\repos\lab4\lab4\task1\engine.cpp(18): error C2065: 'endl': undeclared identifier
   Main.cpp
-c:\users\emanil-9\source\repos\lab4\lab4\task1\motorvehicle.cpp(14): error C2541: 'delete': cannot delete objects that are not pointers
-c:\users\emanil-9\source\repos\lab4\lab4\task1\main.cpp(10): error C2664: 'Body::Body(const Body &)': cannot convert argument 1 from 'const char [1]' to 'const Body &'
-  c:\users\emanil-9\source\repos\lab4\lab4\task1\main.cpp(10): note: Reason: cannot convert from 'const char [1]' to 'const Body'
-  c:\users\emanil-9\source\repos\lab4\lab4\task1\main.cpp(10): note: No constructor could take the source type, or constructor overload resolution was ambiguous
   Motorvehicle.cpp
-c:\users\emanil-9\source\repos\lab4\lab4\task1\motorvehicle.cpp(14): error C2541: 'delete': cannot delete objects that are not pointers
-  Owner.cpp
   Generating Code...
+  Task1.vcxproj -> C:\Users\emanil-9\source\repos\Lab4\Lab4\Debug\Task1.exe

@@ -4,10 +4,11 @@
 using namespace std;
 
 class Body {
+
+public:
 	string color;
 	float width, height;
 
-public:
 	Body(string colorForward, float widthForward, float heightForward);
 	Body();
 	~Body();

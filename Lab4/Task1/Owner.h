@@ -4,11 +4,12 @@
 using namespace std;
 
 class Owner {
+
+public:
 	string name, address;
 	bool allowedToDrive;
 
-public:
-	Owner(string nameInp, string addressInp, bool allowedToDriveInp);
+	Owner(string nameForward, string addressForward, bool allowedToDriveForward);
 	Owner();
 	~Owner();
 

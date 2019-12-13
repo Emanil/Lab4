@@ -3,25 +3,24 @@
 #include "Body.h"
 #include "Engine.h"
 #include <string>
-using namespace std;
-
 
 class Motorvehicle {
 
-	Engine engine;
-	Body body;
-	Owner owner;
+public:
 	float tireDiameters;
 	int numberOfTires;
 	string model;
-	
-	public:
-	
-		Motorvehicle(Engine engineForward, Body bodyForward, Owner ownerForward, float tireDiametersForward, int numberOfTiresForward, string modelForward);
-		Motorvehicle();
-		~Motorvehicle();
 
-		// Method
-		void print();
+	Motorvehicle(float tireDiametersForward, int numberOfTiresForward, string modelForward);
+	Motorvehicle();
+	~Motorvehicle();
+
+	// Method
+	void print();
+
+private:
+	Engine engine;
+	Body body;
+	Owner owner;
 };
 
